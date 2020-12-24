@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_professional_skill_framework_user,SkillFrameworkUser,model_skill_framework,professional_skill_group_user,1,0,0,0
+access_professional_skill_framework_user,SkillFrameworkManager,model_skill_framework,professional_skill_group_manager,1,1,1,1
+access_generic_skill_user,GenericSkillUser,model_skill_property,professional_skill_group_user,1,0,0,0
+access_generic_skill_user,GenericSkillManager,model_skill_property,professional_skill_group_manager,1,1,1,1

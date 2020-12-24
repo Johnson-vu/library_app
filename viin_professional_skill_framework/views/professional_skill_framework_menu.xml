@@ -1,0 +1,18 @@
+<odoo>
+	<menuitem id="menu_skill_framework" name="Skills" web_icon="viin_professional_skill_framework,static/description/icon.png"/>
+	<record model="ir.actions.act_window" id="action_skill_framework">
+		<field name="name">Professional Skill Framework</field>
+		<field name="res_model">skill.framework</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+	<record model="ir.actions.act_window" id="action_generic_property">
+		<field name="name">Generic Properties</field>
+		<field name="res_model">skill.property</field>
+		<field name="view_mode">tree,form</field>
+	</record>	
+	
+	<menuitem id="reponsibility_level" name="Reponsibility Levels" parent="menu_skill_framework"
+		action="action_skill_framework"/> 
+	<menuitem id="generic_property" name="Generic Properties" parent="menu_skill_framework"
+		action="action_generic_property"/> 
+</odoo>

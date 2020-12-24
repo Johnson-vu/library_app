@@ -1,0 +1,22 @@
+<odoo>
+	<record id="generic_property_skill_view" model="ir.ui.view">
+		<field name="name">Generic Properties</field>
+		<field name="model">skill.property</field>
+		<field name="arch" type="xml">
+			<form string="Five Generic Property">
+				<sheet>
+					<group>
+						<field name="skill_level"/>
+					</group>
+					<group>
+						<field name="autonomy"/>
+						<field name="influence"/>
+						<field name="complexity"/>
+						<field name="knowledge"/>
+						<field name="business_skill"/>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+</odoo>
