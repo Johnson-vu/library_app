@@ -19,6 +19,6 @@
         'security/openacademy_security.xml',
         'security/ir.model.access.csv',
         'views/openacademy.xml',
-        #'views/partner.xml',
+        'views/partner.xml',
         ],
     }
