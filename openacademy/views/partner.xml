@@ -5,14 +5,14 @@
 		<field name="model">res.partner</field>
 		<field name="inherit_id" ref="base.view_partner_form"/>
 		<field name="arch" type="xml">
-			<notebook position="inside">
+  			<notebook position="inside"> 
 				<page string="Sessions">
 					<group>
 						<field name="instructor"/>
 						<field name="session_ids"/>
 					</group>
 				</page>
-			</notebook>
+			</notebook> 
 		</field>
 	</record>
 
@@ -26,4 +26,26 @@
 	<menuitem id="contact_menu" name="Contacts"
 		parent="configuration_menu"
 		action="contact_list_action"/>
+	
+	<record model="ir.actions.act_window" id="contact_cat_list_action">
+		<field name="name">Contact Tags</field>
+		<field name="res_model">res.partner.category</field>
+		<field name="view_mode">tree,form</field>
+	</record>	
+	
+	<menuitem id="contact_cat_menu" name="Contact Tags"
+		parent="configuration_menu"
+		action="contact_cat_list_action"/>
+		
+	<record model="res.partner.category" id="teacher">
+		<field name="name">Teacher</field>
+	</record>
+	<record model="res.partner.category" id="teacher1">
+		<field name="name">Level 1</field>
+		<field name="parent_id" eval="teacher"/>
+	</record>
+	<record model="res.partner.category" id="teacher2">
+		<field name="name">Level 2</field>
+		<field name="parent_id" eval="teacher"/>
+	</record>	
 </odoo>

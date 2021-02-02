@@ -11,7 +11,7 @@
     'website': 'viindoo.com',
     'category': 'test',
     'version': '1.0',
-    'depend': ['base'],
+    'depend': ['base','board'],
     'currency':'USD',
     'license':'OPL-1',
     'application': True,
@@ -20,5 +20,8 @@
         'security/ir.model.access.csv',
         'views/openacademy.xml',
         'views/partner.xml',
+        'reports/session_reports.xml',
+        'reports/course_reports.xml',
+        
         ],
     }
